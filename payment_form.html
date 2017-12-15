@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<style>
+		form {
+			margin : 1em;
+			width : 530px;
+			padding: 1em;
+			border: 1px solid black;
+		}
+
+
+		form div + div {
+			margin-top: 1em;
+		}
+
+
+		label {
+			display: inline-block;
+			text-align: right;
+			width : 120px;
+
+		}
+
+
+
+		input {
+			font : 1em san-serif;
+
+			width: 400px;
+			box-sizing: border-box;
+
+			border: 1px solid black;
+		}
+
+
+		button {
+			margin-left: 1em;
+		}
+
+		#size {
+			width: 20px;
+		}
+
+		#labl {
+			text-align: left;
+		}
+
+		fieldset {
+			
+			width: 15em;
+			margin: 1em;
+		}
+
+
+	</style>
+</head>
+<body>
+	<form action="xyz" method="GET">
+		<h1>Payment Form</h1>
+		<p>Required  field are followed by <strong><abbr title="required field">*</abbr></strong></p>
+		<section>
+		<h2>Contact Information</h2>
+
+		<fieldset>
+			<legend>Title</legend>
+			<p>
+				<input type="radio" name="mister" id="size"><label id="labl">Mister</label>
+			</p>
+
+			<p>
+				<input type="radio" name="miss" id="size"><label id="labl">Miss</label>
+			</p>
+		</fieldset>
+		
+		<div>
+		<label>Name : <strong><abbr title="required field">*</abbr></strong></label>
+		<input type="text" name="Enter Your Name">
+		</div>
+
+		<div>
+			<label>E-Mail : <strong><abbr title="required field">*</abbr></strong></label>
+			<input type="text" name="Enter Your E-Mail">
+		</div>
+
+		<div>
+			<label>Password : <strong><abbr title="required field">*</abbr></strong></label>
+			<input type="password">
+		</div>
+
+		</section>
+
+		<section>
+			<h2>Payment Information</h2>
+			<div>
+				<label>Card Type : </label>
+				<select>
+					<option>Visa</option>
+					<option>Master Card</option>
+					<option>American Express</option>				
+				</select>
+			</div>
+			
+			<div>
+				<label>Card Number :<strong><abbr title="required field">*</abbr></strong></label>
+				<input type="text">
+			</div>
+
+			<div>
+				<label>Expiration Date : <strong><abbr title="required field">*</abbr></strong></label>
+				<input type="Date">
+			</div>
+
+
+		</section>
+
+
+	</form>
+
+
+
+	
+
+</body>
+</html>
