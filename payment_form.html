@@ -5,7 +5,7 @@
 	<style>
 		form {
 			margin : 1em;
-			width : 530px;
+			width : 550px;
 			padding: 1em;
 			border: 1px solid black;
 		}
@@ -19,7 +19,7 @@
 		label {
 			display: inline-block;
 			text-align: right;
-			width : 120px;
+			width : 130px;
 
 		}
 
@@ -36,7 +36,7 @@
 
 
 		button {
-			margin-left: 1em;
+			margin-left: 10em;
 		}
 
 		#size {
@@ -81,7 +81,7 @@
 
 		<div>
 			<label>E-Mail : <strong><abbr title="required field">*</abbr></strong></label>
-			<input type="text" name="Enter Your E-Mail">
+			<input type="email" name="Enter Your E-Mail">
 		</div>
 
 		<div>
@@ -109,8 +109,12 @@
 
 			<div>
 				<label>Expiration Date : <strong><abbr title="required field">*</abbr></strong></label>
-				<input type="Date">
+				<input type="text">
+				<em>formatted as mm/yy</em>
 			</div>
+
+
+			<p><button type="submit">Validate The Payment</button></p>
 
 
 		</section>
