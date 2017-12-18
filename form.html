@@ -53,17 +53,23 @@
 	<form action="xyz" method="GET">
 		<div>
 			<label>Name : </label>
-			<input type="text" placeholder="Enter Your Name ">
+			<input type="text" placeholder="Enter Your Name " required minlength="3" maxlength="20">
 		</div>
 		
+        <div>
+            <label>Age : </label>
+            <input type="number" step="1" min="12" max="50" pattern="\d+" >
+        </div>
+        
+        
 		<div>
 			<label>E-Mail :</label>
-			<input type="email" placeholder="Enter Your E-Mail" multiple>
+			<input type="email" placeholder="Enter Your E-Mail" required multiple>
 		</div>
 
 		<div>
 			<label>Message : </label>
-			<textarea placeholder="Message Here!"></textarea>
+			<textarea placeholder="Message Here!!" required></textarea>
 		</div>
 
 		<div>
